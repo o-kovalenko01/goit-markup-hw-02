@@ -6,14 +6,10 @@
   --navyblue: #2e2f42;
   --slate: #434455;
   --white: #ffffff;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--slate);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  --text-size: 16px;
+  --text-height: 1.5;
+  --text-weight: 500;
+  --text-spacing: 0.02em;
 }
 
 .visually-hidden {
@@ -32,11 +28,18 @@ body {
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style-type: none;
 }
 
-/*             HEADER                */
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--slate);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
+    letter-spacing: var(--text-spacing);
+  }
 
 .header-logo {
   color: var(--navyblue);
@@ -47,27 +50,27 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .header-logo span {
   color: var(--iris);
 }
 
 .header-item {
   color: var(--navyblue);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-height);
+  letter-spacing: var(--text-spacing);
 }
 
 .header-contacts-item {
   color: var(--slate);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: var(--text-size);
+  line-height: var(--text-height);
+  letter-spacing: var(--text-spacing);
   font-style: normal;
 }
 
-/*             HERO                */
 .hero {
   background-color: var(--navyblue);
 }
@@ -78,16 +81,17 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--text-spacing);
 }
+
 .hero-btn {
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-height);
   letter-spacing: 0.04em;
   cursor: pointer;
 }
@@ -98,28 +102,22 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--text-spacing);
   text-transform: capitalize;
 }
 
 .page-subtitle {
   color: var(--navyblue);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--text-weight);
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--text-spacing);
 }
-
-/* .page-text {
-  color: var(--slate);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-} */
 
 .footer {
   background-color: var(--navyblue);
 }
+
 .logo-footer {
   color: var(--white);
   font-size: 18px;
@@ -132,11 +130,12 @@ body {
 .logo-footer span {
   color: var(--iris);
 }
+
 .page-text-footer {
   color: var(--white);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: var(--text-size);
+  line-height: var(--text-height);
+  letter-spacing: var(--text-spacing);
 }
 
 .filters-btn {
@@ -145,10 +144,15 @@ body {
   background: var(--cloud);
   color: var(--iris);
   text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-height);
+  letter-spacing: 0.04em;
   cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus{
+    background-color: var(--ocean);
+    color: var(--white);
 }
