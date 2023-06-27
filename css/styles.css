@@ -34,18 +34,18 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--white);
-    color: var(--slate);
-    font-size: var(--text-size);
-    line-height: var(--text-height);
-    letter-spacing: var(--text-spacing);
-  }
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  color: var(--slate);
+  font-size: var(--text-size);
+  line-height: var(--text-height);
+  letter-spacing: var(--text-spacing);
+}
 
 .header-logo {
-  color: var(--navyblue);
+  color: var(--iris);
   font-size: 18px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -53,7 +53,7 @@ body {
 }
 
 .header-logo span {
-  color: var(--iris);
+  color: var(--navyblue);
 }
 
 .header-item {
@@ -64,12 +64,25 @@ body {
   letter-spacing: var(--text-spacing);
 }
 
+.header-item:focus,
+.header-item:hover{
+    color: var(--ocean);
+}
+
+.header-contacts{
+    font-style: normal;
+}
+
 .header-contacts-item {
   color: var(--slate);
   font-size: var(--text-size);
   line-height: var(--text-height);
   letter-spacing: var(--text-spacing);
-  font-style: normal;
+}
+
+.header-contacts-item:focus,
+.header-contacts-item:hover {
+    color: var(--ocean);
 }
 
 .hero {
@@ -153,7 +166,7 @@ body {
 }
 
 .filters-btn:hover,
-.filters-btn:focus{
-    background-color: var(--ocean);
-    color: var(--white);
+.filters-btn:focus {
+  background-color: var(--ocean);
+  color: var(--white);
 }
