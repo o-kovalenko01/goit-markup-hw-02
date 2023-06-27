@@ -141,7 +141,7 @@ body {
   text-transform: uppercase;
 }
 .logo-footer span {
-  color: var(--white);
+  color: var(--cloud);
 }
 
 .page-text-footer {
