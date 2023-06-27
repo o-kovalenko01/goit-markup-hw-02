@@ -12,7 +12,7 @@
   --text-spacing: 0.02em;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -23,7 +23,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .link {
   text-decoration: none;
@@ -65,12 +65,12 @@ body {
 }
 
 .header-item:focus,
-.header-item:hover{
-    color: var(--ocean);
+.header-item:hover {
+  color: var(--ocean);
 }
 
-.header-contacts{
-    font-style: normal;
+.header-contacts {
+  font-style: normal;
 }
 
 .header-contacts-item {
@@ -82,7 +82,7 @@ body {
 
 .header-contacts-item:focus,
 .header-contacts-item:hover {
-    color: var(--ocean);
+  color: var(--ocean);
 }
 
 .hero {
@@ -99,6 +99,7 @@ body {
 }
 
 .hero-btn {
+  font-family: "Roboto", sans-serif;
   border-radius: 4px;
   background: var(--iris);
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
@@ -108,6 +109,19 @@ body {
   line-height: var(--text-height);
   letter-spacing: 0.04em;
   cursor: pointer;
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: var(--ocean);
+}
+
+.team {
+  background-color: var(--cloud);
+}
+
+.team-list {
+  background-color: var(--white);
 }
 
 .page-title {
@@ -133,20 +147,20 @@ body {
 }
 
 .logo-footer {
-  color: var(--white);
+  color: var(--iris);
   font-size: 18px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .logo-footer span {
-  color: var(--iris);
+  color: var(--white);
 }
 
 .page-text-footer {
-  color: var(--white);
+  color: var(--cloud);
   font-size: var(--text-size);
   line-height: var(--text-height);
   letter-spacing: var(--text-spacing);
